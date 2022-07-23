@@ -1,0 +1,181 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+
+body.popup-show::after {
+	opacity: 1;
+}
+
+.popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+
+	@media (max-width: em(900.98)) {
+		margin: -35px -20px;
+	}
+
+}
+
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+
+}
+
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+
+
+}
+
+.popup__content {
+	position: relative;
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #eee;
+	padding: 20px;
+	width: 100%;
+	max-width: 900px;
+	border-radius: 20px;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	.lock & {
+		visibility: visible;
+	}
+}
+
+.popup__close {
+	width: 60px;
+	height: 60px;
+	color: #FF868E;
+	align-self: flex-end;
+	background: #FFFFFF;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+.popup {
+
+	// .popup__body
+
+	&__body {}
+
+	// .popup__title
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+
+	&__title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 52px;
+		margin: 0 0 10px 0;
+		color: #1D1D1D;
+		@include adaptiveValue("font-size", 36, 20, 852);
+	}
+
+	// .popup__sub-title
+
+	&__sub-title {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		color: #8C8C8C;
+		margin: 0 0 40px 0;
+		@include adaptiveValue("font-size", 20, 14, 852);
+
+	}
+
+	// .popup__link
+
+	&__link {
+		color: #FF868E;
+	}
+}
+
+.forma {
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 320px;
+	position: relative;
+
+	background: #FFFFFF;
+	border: 2px dashed #FBE0DC;
+	border-radius: 20px;
+	justify-content: center;
+
+
+	background: white url("@img/upload-bg.svg") center no-repeat;
+
+
+	// .forma__upload
+	&__text {
+
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
+
+		color: #8C8C8C;
+
+		span {
+			font-weight: 500;
+			color: #1D1D1D;
+		}
+	}
+
+	&__upload {}
+
+	&__link {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+}

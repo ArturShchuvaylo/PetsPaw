@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Voting"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="paga__voting first-sheet">
+				<div class="first-sheet__container">
+					<div class="first-sheet__nav-bar nav-bar">
+						<div class="nav-bar__top header">
+							<div class="header__log">
+								<img src="@img/logo.svg" alt="here must be logo...">
+							</div>
+							<div class="header__tools">
+								<div class="header__icon">
+									<img src="@img/icons/Day/Vector (Stroke).svg" alt="">
+								</div>
+								<div class="header__switcher switcher">
+									<input id="switcher" autocomplete="off" type="checkbox" name="switcher"
+										class="switcher__input">
+									<label for="switcher" class="switcher__lable"></label>
+								</div>
+							</div>
+						</div>
+						<div class="nav-bar__text text">
+							<h1 class="text__title">Hi intern!</h1>
+							<div class="text__lable">Welcome to MI 2022 Front-end test</div>
+						</div>
+						<nav class="nav-bar__menu menu">
+							<h2 class="menu__title">Lets start using The Cat API</h2>
+							<div class="menu__columns colum">
+								<div class="column__item">
+									<div class="column__body">
+										<a href="voting.html" class="column__icon  ">
+											<div class="column__image column__image_perple">
+												<img src="@img/vote-table.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="voting.html" class="column__button">
+											VOTING
+										</a>
+									</div>
+								</div>
+								<div class="column__item">
+									<div class="column__body">
+										<a href="breeds.html" class="column__icon">
+											<div class="column__image column__image_green">
+												<img src="@img/pet-breeds.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="breeds.html" class="column__button">
+											BREEDS
+										</a>
+									</div>
+								</div>
+								<div class="column__item">
+									<div class="column__body">
+										<a href="gallery.html" class="column__icon">
+											<div class="column__image column__image_yellow">
+												<img src="@img/images-search.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="gallery.html" class="column__button">
+											GALLERY
+										</a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="first-sheet__click-voting click-voting">
+						<div class="click-voting__top top">
+							<div class="top__menu menu">
+
+
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+								<nav class="menu__body">
+									<div class="menu__row column">
+										<div class="column__card">
+											<div class="column__body">
+												<a href="voting.html" class="column__icon  ">
+													<div class="column__image column__image_perple">
+														<img src="@img/vote-table.svg" alt="here must be image">
+													</div>
+												</a>
+												<a href="voting.html" class="column__button">
+													VOTING
+												</a>
+											</div>
+										</div>
+										<div class="column__card">
+											<div class="column__body">
+												<a href="breeds.html" class="column__icon">
+													<div class="column__image column__image_green">
+														<img src="@img/pet-breeds.svg" alt="here must be image">
+													</div>
+												</a>
+												<a href="breeds.html" class="column__button">
+													BREEDS
+												</a>
+											</div>
+										</div>
+										<div class="column__card">
+											<div class="column__body">
+												<a href="gallery.html" class="column__icon">
+													<div class="column__image column__image_yellow">
+														<img src="@img/images-search.svg" alt="here must be image">
+													</div>
+												</a>
+												<a href="gallery.html" class="column__button">
+													GALLERY
+												</a>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+
+
+
+							<div class="top__serch serch">
+								<form action="search.html" class="serch__item">
+									<input autocomplete="off" type="text" class="serch__input" name="search"
+										placeholder="Search for breeds by name">
+									<button type="submit" class="serch__button _icon-search"></button>
+								</form>
+							</div>
+							<div class="top__icons icon">
+								<a href="likes.html" class="icon__item _icon-smile-happy"></a>
+								<a href="favourites.html" class="icon__item _icon-heart-empty"></a>
+								<a href="dislikes.html" class="icon__item _icon-smile-sad"></a>
+							</div>
+						</div>
+						<div class="click-voting__serch serch">
+							<form action="search.html" class="serch__item">
+								<input type="text" class="serch__input" name="search"
+									placeholder="Search for breeds by name">
+								<button type="submit" class="serch__button _icon-search"></button>
+							</form>
+						</div>
+						<div class="click-voting__body body-voting">
+							<div class="body-voting__buttons buttons">
+								<a href="index.html" class="buttons__back _icon-arrow"></a>
+								<a href="#" class="buttons__voting">VOTING</a>
+							</div>
+							<div class="body-voting__image">
+								<img src="@img/voting.jpg" alt="here must be photo">
+							</div>
+
+
+
+							<div class="click-voting__bar-icons bar-icons">
+								<div class="bar-icons__wrapp">
+									<button class="bar-icons__item bar-icons__item_like _icon-smile-happy">
+									</button>
+									<button class="bar-icons__item bar-icons__item_heart _icon-heart-empty "></button>
+									<button class="bar-icons__item bar-icons__item_dislike _icon-smile-sad"></button>
+								</div>
+							</div>
+							<div class="click-voting__list">
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-heart-empty"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-heart-empty"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-smile-happy-green"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-smile-sad-yellow"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-smile-sad-yellow"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-smile-sad-yellow"></div>
+									</div>
+
+
+								</div>
+								<div class="list__item item-list">
+									<div class="item-list__information">
+										<div class="item-list__time">22:35</div>
+										<div class="item-list__text">Image ID: fQSunHvl8 was added to Favourites</div>
+									</div>
+
+									<div class="item-list__icon">
+										<div class="item-list__icon item-list__icon_red _icon-smile-sad-yellow"></div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

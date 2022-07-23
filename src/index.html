@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="paga__section main">
+				<div class="main__block">
+					<div class="main__body">
+						<div class="main__top header">
+							<div class="header__log">
+								<img src="@img/logo.svg" alt="here must be logo...">
+							</div>
+							<div class="header__tools">
+								<div class="header__icon">
+									<img src="@img/icons/Day/Vector (Stroke).svg" alt="">
+								</div>
+								<div class="header__switcher switcher">
+									<input id="switcher" autocomplete="off" type="checkbox" name="switcher"
+										class="switcher__input">
+									<label for="switcher" class="switcher__lable"></label>
+								</div>
+							</div>
+						</div>
+						<div class="main__text text">
+							<h1 class="text__title">Hi intern!</h1>
+							<div class="text__lable">Welcome to MI 2022 Front-end test</div>
+						</div>
+						<nav class="main__menu menu">
+							<h2 class="menu__title">Lets start using The Cat API</h2>
+							<div class="menu__columns colum">
+								<div class="column__item">
+									<div class="column__body">
+										<a href="voting.html" class="column__icon  ">
+											<div class="column__image column__image_perple">
+												<img src="@img/vote-table.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="voting.html" class="column__button">
+											VOTING
+										</a>
+									</div>
+								</div>
+								<div class="column__item">
+									<div class="column__body">
+										<a href="breeds.html" class="column__icon">
+											<div class="column__image column__image_green">
+												<img src="@img/pet-breeds.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="breeds.html" class="column__button">
+											BREEDS
+										</a>
+									</div>
+								</div>
+								<div class="column__item">
+									<div class="column__body">
+										<a href="gallery.html" class="column__icon">
+											<div class="column__image column__image_yellow">
+												<img src="@img/images-search.svg" alt="here must be image">
+											</div>
+										</a>
+										<a href="gallery.html" class="column__button">
+											GALLERY
+										</a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="main__block-right">
+						<div class="main__background">
+						</div>
+						<img class="main__picture" src="@img/main.svg" alt="">
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

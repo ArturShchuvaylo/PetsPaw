@@ -1,0 +1,116 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+
+	&:after {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-arrow-circle:before {
+	content: "\e900";
+}
+
+._icon-arrow-down:before {
+	content: "\e901";
+}
+
+._icon-arrow-up:before {
+	content: "\e902";
+
+}
+
+._icon-arrow:before {
+	content: "\e903";
+
+}
+
+._icon-arrow-left:before {
+	content: "\e903";
+
+}
+
+._icon-arrow-right:after {
+	content: "\e903";
+	transform: rotate(180deg);
+
+}
+
+._icon-cross:before {
+	content: "\e904";
+}
+
+._icon-heart-empty:before {
+	content: "\e905";
+
+}
+
+._icon-heart-empty-white:before {
+	content: "\e905";
+
+}
+
+._icon-heart-solid:before {
+	content: "\e906";
+}
+
+._icon-letter-down:before {
+	content: "\e907";
+
+}
+
+._icon-letter-up:before {
+	content: "\e908";
+
+}
+
+._icon-load:before {
+	content: "\e909";
+}
+
+._icon-search:before {
+	content: "\e90a";
+
+}
+
+._icon-smile-happy:before {
+	content: "\e90b";
+
+}
+
+
+
+._icon-smile-happy-green:before {
+	content: "\e90b";
+	color: #97EAB9;
+	font-size: 34px;
+	font-weight: 500;
+}
+
+._icon-smile-sad:before {
+	content: "\e90c";
+
+}
+
+
+
+._icon-smile-sad-yellow:before {
+	content: "\e90c";
+	color: #FFD280;
+	font-size: 34px;
+	font-weight: 500;
+}
